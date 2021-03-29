@@ -58,6 +58,7 @@
       text-decoration: none;
       &:hover {
         font-weight: 700;
+        text-decoration: underline;
       }
     }
   }
@@ -96,6 +97,13 @@
     padding:0 0.5rem;
     margin: 0 0 0.25rem 0;
     font-size: 1.3rem;
+    > a {
+      color: var(--alabaster);
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
   &__subtitle {
     padding: 0 0.5rem 1rem 0.5rem;
