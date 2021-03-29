@@ -20,6 +20,9 @@
   @media (min-width: $screen-sm-min) {
     padding: 0 1rem;
   }
+  &.inner-space {
+    margin: 1.5rem auto;
+  }
 }
 
 .imgwrapper {
@@ -36,6 +39,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
   }
   > figcaption {
     position: absolute;
