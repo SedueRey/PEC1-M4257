@@ -19,6 +19,14 @@
 }
 
 .menu {
+  &__list {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    list-style: none;
+    @media (min-width: $screen-md-min) {
+      text-align: right;
+    }
+  }
   @media (max-width: $screen-md-min) {
     display: block;
     max-height: 100vh;
@@ -27,11 +35,6 @@
     background-color: var(--copper-penny);
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    &__list {
-      padding: 0 0 0 0;
-      margin: 0 0 0 0;
-      list-style: none;
-    }
     &__link {
       display: block;
       padding: 1.5rem 2rem;
@@ -41,6 +44,19 @@
       &:hover {
         background-color: var(--timberwolf); 
         color: var(--eerie-black);
+        font-weight: 700;
+      }
+    }
+  }
+  @media (min-width: $screen-md-min) {
+    &__item {
+      display: inline-block;
+    }
+    &__link {
+      padding: 0rem 1rem;
+      color: var(--alabaster);
+      text-decoration: none;
+      &:hover {
         font-weight: 700;
       }
     }
@@ -59,5 +75,31 @@
         display: block;
       }
     }
+  }
+}
+
+.mainheader {
+  background-color: var(--copper-penny);
+  @media (min-width: $screen-md-min) {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+.maintitle {
+  line-height: 1.1;
+  color: var(--alabaster);
+  @media (max-width: $screen-md-min) {
+    padding: 1rem 1rem 1rem 3rem;
+  }
+  &__title {
+    padding:0 0.5rem;
+    margin: 0 0 0.25rem 0;
+    font-size: 1.3rem;
+  }
+  &__subtitle {
+    padding: 0 0.5rem 1rem 0.5rem;
+    margin: 0 0 0 0;
+    font-size: 1.1rem;
   }
 }

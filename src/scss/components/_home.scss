@@ -9,12 +9,20 @@ body.home {
   background-size: cover;
 }
 
+.categories-cover {
+  background-image: url('../images/especialidades.jpg');
+  background-size: cover;
+}
+
 .hoverimage {
   background-color: rgba(0,0,0,0.55);
   color: var(--alabaster);
   margin: -5.25rem -1rem 2rem -1rem;
   padding: 1rem;
   position: relative;
+  @media (min-width: $screen-sm-min) {
+    margin: -5.25rem 0 2rem 0;
+  }
   &__title {
     font-size: 1.5rem;
     line-height: 1.1;
