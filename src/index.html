@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante Nanaryû</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/app.scss" />
+</head>
+<body class="home">  
+  <header class="mainheader">
+    <include src="components/menu.html"></include>
+    <include src="components/header.html" locals='{"headerTitle":"Restaurante Nanaryû"}'></include>
+  </header>
+  <section class="content">
+    <article class="article">
+      <div class="aspect-16-9 cover home-cover" role="presentation"></div>
+      <hgroup class="hoverimage">
+        <h1 class="hoverimage__title">Restaurante Nanaryû</h1>
+        <h2 class="hoverimage__subtitle">Bienvenidos a nuestro restaurante</h2>
+      </hgroup>
+      <p>
+        Bienvenidos a nuestro restaurante. Estamos especializados en comida japonesa, especialmente
+        de la zona de Hida (<span lang="jp">飛騨</span>), situada en los alpes japoneses y famosa 
+        por su ternera.
+      </p>
+      <p>
+        Nuestro chef, español, Eduardo Rey, conocido como Sedue, fue a estudiar al 
+        <a target="_blank" href="http://www.sukyomahikari.or.jp/">templo de la luz en Takayama</a>
+        (<span lang="jp">高山</span>). Takayama, o Hida-Takayama como se la conoce actualmente 
+        en un intento de diferenciarla de las otras muchas 
+        Takayama que hay en Japón, merece ser incluida en los itinerarios y recorridos por Japón. Con decenas
+        de ryokan y alojamientos tradicionales, bodegas de sake tradicionales, templos y santuarios de madera
+        y un casco antiguo espectacular lleno de casas del periodo de Edo cuya arquitectura apenas ha cambiado
+        hasta nuestros días.
+      </p>
+      <p>Si puede aprovechar para imitar su andadura e ir a esa zona, Takayama te enamorará</p>
+    </article>
+  </section>
+  <include src="components/footer.html"></include>
+  <script src="./js/app.js"></script>
+</body>
+</html>

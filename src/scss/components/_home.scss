@@ -1,0 +1,31 @@
+body.home {
+  .maintitle {
+    display: none;
+  }
+}
+
+.home-cover {
+  background-image: url('../images/home.jpg');
+  background-size: cover;
+}
+
+.hoverimage {
+  background-color: rgba(0,0,0,0.55);
+  color: var(--alabaster);
+  margin: -5.25rem -1rem 2rem -1rem;
+  padding: 1rem;
+  position: relative;
+  &__title {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin: 0 0 0.35rem 0;
+    padding: 0 0 0 0;
+  }
+  &__subtitle {
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+}

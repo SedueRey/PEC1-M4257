@@ -1,0 +1,12 @@
+.content {
+  @media (max-width: $screen-sm-min) {
+    padding: 0 1rem;
+  }
+  @extend .inner;
+}
+
+.article {
+  > p {
+    line-height: 1.55;
+  }
+}
