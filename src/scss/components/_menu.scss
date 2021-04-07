@@ -1,5 +1,5 @@
 #hamburger {
-  background-color: var(--copper-penny);
+  background-color: var(--copper-penny-hc);
   border-radius: 100%;
   color: #fff;
   cursor: pointer;
@@ -32,13 +32,13 @@
     max-height: 100vh;
     height: 100vh;
     width: 80vw;
-    background-color: var(--copper-penny);
+    background-color: var(--copper-penny-hc);
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     &__link {
       display: block;
       padding: 1.5rem 2rem;
-      color: var(--alabaster);
+      color: var(--alabasterhc);
       border-bottom: 1px solid var(--alabaster-border);
       text-decoration: none;
       &:hover {
@@ -54,7 +54,7 @@
     }
     &__link {
       padding: 0rem 1rem;
-      color: var(--alabaster);
+      color: var(--alabasterhc);
       text-decoration: none;
       &:hover {
         font-weight: 700;
@@ -80,7 +80,7 @@
 }
 
 .mainheader {
-  background-color: var(--copper-penny);
+  background-color: var(--copper-pennyhc);
   @media (min-width: $screen-md-min) {
     padding: 0.5rem;
     font-size: 0.875rem;
