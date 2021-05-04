@@ -89,6 +89,18 @@
   }
 }
 
+.logo {
+  display: inline-block;
+  filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0));
+  mix-blend-mode: luminosity;
+  transition: filter 0.25s linear;
+  width: 8rem;
+
+  &:hover {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+  }
+}
+
 .maintitle {
   line-height: 1.1;
   color: var(--alabaster);
@@ -116,10 +128,12 @@
     font-size: 1.1rem;
   }
   &__logo {
+    filter: drop-shadow(0 0 0 rgba(0,0,0,0));
+    mix-blend-mode: luminosity;
     transition: filter 0.25s linear;
-    filter: hue-rotate(0);
+    width: 10rem;
     &:hover {
-      filter: hue-rotate(-40deg);
+      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
     }
   }
 }

@@ -2,9 +2,27 @@
   background-color: var(--copper-pennyhc);
   color: var(--alabasterhc);
   padding: 1rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   margin: 3rem 0 0 0;
   &__inner {
     @extend .inner;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    .logo {
+      flex-shrink: 0;
+      margin: 0 1rem 0 0;
+    }
+  }
+}
+
+.menufooter {
+  padding: 0.875rem 0;
+  .menu__list {
+    text-align: left;
+    .menu__link {
+      margin: 0 1rem 0 0;
+      padding: 0 0 0 0;
+    }
   }
 }
