@@ -1,12 +1,26 @@
 .home-cover {
-  background-image: url('../images/home.jpg');
+  background-image: url('../images/webp/home.webp');
   background-size: cover;
 }
 
+
+
 .categories-cover {
-  background-image: url('../images/especialidades.jpg');
+  background-image: url('../images/webp/especialidades.webp');
   background-size: cover;
 }
+
+body.nowebp {
+
+  .home-cover {
+    background-image: url('../images/home.jpg');
+  }
+
+  .categories-cover {
+    background-image: url('../images/especialidades.jpg');
+  }
+} 
+
 
 .hoverimage {
   background-color: rgba(0,0,0,0.55);

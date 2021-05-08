@@ -56,6 +56,8 @@
   padding-top: 56.25%;
   overflow: hidden;
   margin: 1rem 0 1rem 0;
+  > .img > img,
+  > .img > source,
   > img {
     position: absolute;
     top: 0;
@@ -68,6 +70,8 @@
     width: 10rem;
     margin: 0.3rem 1rem 0 0;
     padding-top: 9.5rem;
+    > .img > img,
+    > .img > source,
     > img {
       height: 100%;
       width: auto;
@@ -94,6 +98,8 @@
       height: 0;
       max-height: 0;
       overflow: hidden;
+      > .img > img,
+      > .img > source,
       > img {
         left: 0;
         transform: none;

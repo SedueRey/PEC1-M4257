@@ -1,4 +1,6 @@
-function debounce(func, wait = 100) {
+import 'regenerator-runtime/runtime'
+
+const debounce = (func, wait = 100) => {
   let timeout;
   return function(...args) {
     clearTimeout(timeout);
@@ -7,6 +9,22 @@ function debounce(func, wait = 100) {
     }, wait);
   };
 }
+
+const supportsWebp = async () => {
+  if (!self.createImageBitmap) return false;
+
+  const webpData = 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=';
+  const blob = await fetch(webpData).then(r => r.blob());
+  return createImageBitmap(blob).then(() => true, () => false);
+}
+
+// No es necesario esperar a que cargue todo el DOM
+// para comprobar la compatibilidad.
+(async () => {
+  if(!await supportsWebp()) {
+    document.body.classList.add('nowebp');
+  }
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('hamburger').addEventListener('click', () => {

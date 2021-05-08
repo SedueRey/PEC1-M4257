@@ -21,7 +21,11 @@
     </span>
     <div class="article__imagewrappertopper">
       <figure class="article__imagewrapper">
-        <img loading="lazy" alt="Foto de Carne de Hida a la piedra" src="images/carneHida.jpg" />
+        <picture class="img">
+          <source srcset="images/webp/carneHida.webp" type="image/webp">
+          <source srcset="images/carneHida.jpg" type="image/jpeg"> 
+          <img alt="Foto de Carne de Hida a la piedra" src="images/carneHida.jpg" />
+        </picture>
       </figure>
     </div>
     <div class="content">
@@ -48,7 +52,7 @@
       </p>
       <p>¡A disfrutar!</p>
       <p>
-        <img class="content__svg" src="/svg/undraw_eating_together_tjhx.svg" alt="Carne de primera">
+        <img class="content__svg is-animated" src="/svg/undraw_eating_together_tjhx.svg" alt="Carne de primera">
       </p>
     </div>
   </article>
