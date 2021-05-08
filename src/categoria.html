@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./scss/app.scss" />
+  <include src="components/favicon.html"></include>
 </head>
 <body>  
   <include src="components/mainheader.html"></include>
@@ -19,60 +20,80 @@
     </hgroup>
     <ul class="articleList">
       <li class="articleList__item">
-        <article class="article article-listitem">
-          <h1 class="article__title is-category">
-            <a href="detalle.html">
-              Carne de Hida. Preparada a la piedra.
-            </a>
-          </h1>
-          <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
-          <figure class="article__imagewrapper">
-            <img alt="Foto de Carne de Hida a la piedra" src="images/carneHida.jpg" />
-          </figure>
-          <p>Pequeña descripción del plato Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium leo et lobortis auctor. Duis consectetur lacus vel odio blandit vestibulum. Etiam dui ipsum, accumsan ut mi et, efficitur sagittis quam. Phasellus eu aliquam odio, vel pellentesque ligula. Praesent quis velit eu justo lobortis blandit. Pellentesque mollis imperdiet sem non pretium. In sit amet dignissim quam, ac volutpat nunc. Phasellus lorem neque, lobortis pulvinar justo ac, efficitur mattis sem. Suspendisse in dui lacus. <a href="detalle.html">continuar leyendo</a></p>
-        </article>
+        <a href="detalle.html" class="card article">
+          <div class="card__inner">
+            <div class="card__face card__front">
+              <figure class="card__imagewrapper">
+                <img class="card__image" alt="Foto de Carne de Hida a la piedra" src="images/small/carneHida.jpg" />
+              </figure>
+              <h1 class="card__title">
+                Carne de Hida. Preparada a la piedra.
+              </h1>
+            </div>
+            <div class="card__face card__back">
+              <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
+              <p>Pequeña descripción del plato Suspendisse in dui lacus.</p>
+              <p>Ver más</p>
+            </div>
+          </div>
+        </a>
       </li>
       <li class="articleList__item">
-        <article class="article article-listitem">
-          <h1 class="article__title is-category">
-            <a href="detalle.html">
-              Pollo panko.
-            </a>
-          </h1>
-          <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
-          <figure class="article__imagewrapper">
-            <img alt="Foto de pollo panko" src="images/IMG_20190819_213549.jpg" />
-          </figure>
-          <p>Pequeña descripción del plato Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium leo et lobortis auctor. Duis consectetur lacus vel odio blandit vestibulum. Etiam dui ipsum, accumsan ut mi et, efficitur sagittis quam. Phasellus eu aliquam odio, vel pellentesque ligula. Praesent quis velit eu justo lobortis blandit. Pellentesque mollis imperdiet sem non pretium. In sit amet dignissim quam, ac volutpat nunc. Phasellus lorem neque, lobortis pulvinar justo ac, efficitur mattis sem. Suspendisse in dui lacus. <a href="detalle.html">continuar leyendo</a></p>
-        </article>
+        <a href="detalle.html" class="card article">
+          <div class="card__inner">
+            <div class="card__face card__front">
+              <figure class="card__imagewrapper">
+                <img class="card__image" alt="Foto de pollo panko" src="images/small/IMG_20190819_213549.jpg" />
+              </figure>
+              <h1 class="card__title">
+                Pollo panko.
+              </h1>
+            </div>
+            <div class="card__face card__back">
+              <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
+              <p>Pequeña descripción del plato Suspendisse in dui lacus.</p>
+              <p>Ver más</p>
+            </div>
+          </div>
+        </a>
       </li>
       <li class="articleList__item">
-        <article class="article article-listitem">
-          <h1 class="article__title is-category">
-            <a href="detalle.html">
-              Curry japonés.
-            </a>
-          </h1>
-          <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
-          <figure class="article__imagewrapper">
-            <img alt="Foto de plato de curry japonés" src="images/P_20190817_143808_vHDR_On.jpg" />
-          </figure>
-          <p>Pequeña descripción del plato Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium leo et lobortis auctor. Duis consectetur lacus vel odio blandit vestibulum. Etiam dui ipsum, accumsan ut mi et, efficitur sagittis quam. Phasellus eu aliquam odio, vel pellentesque ligula. Praesent quis velit eu justo lobortis blandit. Pellentesque mollis imperdiet sem non pretium. In sit amet dignissim quam, ac volutpat nunc. Phasellus lorem neque, lobortis pulvinar justo ac, efficitur mattis sem. Suspendisse in dui lacus. <a href="detalle.html">continuar leyendo</a></p>
-        </article>
+        <a href="detalle.html" class="card article">
+          <div class="card__inner">
+            <div class="card__face card__front">
+              <figure class="card__imagewrapper">
+                <img class="card__image" alt="Foto de fideos japoneses fríos" src="images/small/P_20190814_142659_vHDR_On.jpg" />
+              </figure>
+              <h1 class="card__title">
+                Fideos fríos, típicos del verano.
+              </h1>
+            </div>
+            <div class="card__face card__back">
+              <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
+              <p>Pequeña descripción del plato Suspendisse in dui lacus.</p>
+              <p>Ver más</p>
+            </div>
+          </div>
+        </a>
       </li>
       <li class="articleList__item">
-        <article class="article article-listitem">
-          <h1 class="article__title is-category">
-            <a href="detalle.html">
-              Fideos fríos, típicos del verano.
-            </a>
-          </h1>
-          <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
-          <figure class="article__imagewrapper">
-            <img alt="Foto de plato de curry japonés" src="images/P_20190814_142659_vHDR_On.jpg" />
-          </figure>
-          <p>Pequeña descripción del plato Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pretium leo et lobortis auctor. Duis consectetur lacus vel odio blandit vestibulum. Etiam dui ipsum, accumsan ut mi et, efficitur sagittis quam. Phasellus eu aliquam odio, vel pellentesque ligula. Praesent quis velit eu justo lobortis blandit. Pellentesque mollis imperdiet sem non pretium. In sit amet dignissim quam, ac volutpat nunc. Phasellus lorem neque, lobortis pulvinar justo ac, efficitur mattis sem. Suspendisse in dui lacus. <a href="detalle.html">continuar leyendo</a></p>
-        </article>
+        <a href="detalle.html" class="card article">
+          <div class="card__inner">
+            <div class="card__face card__front">
+              <figure class="card__imagewrapper">
+                <img class="card__image" alt="Foto de plato de curry japonés" src="images/small/P_20190817_143808_vHDR_On.jpg" />
+              </figure>
+              <h1 class="card__title">
+                Curry japonés.
+              </h1>
+            </div>
+            <div class="card__face card__back">
+              <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
+              <p>Pequeña descripción del plato Suspendisse in dui lacus.</p>
+              <p>Ver más</p>
+            </div>
+          </div>
+        </a>
       </li>
     </ul>
   </section>

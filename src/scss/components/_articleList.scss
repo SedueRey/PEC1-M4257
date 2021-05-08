@@ -2,6 +2,7 @@
   list-style: none;
   padding: 0 0 0 0;
   &__item {
+    display: inline-block;
     padding: 0 0 1.5rem 0;
     @media (min-width: $screen-md-min) {
       padding: 0 1rem 2rem 1rem;
@@ -23,7 +24,7 @@
     }
   }
   .article__meta {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   p {
     font-size: 0.875rem;
@@ -87,14 +88,22 @@
   .article__imagewrapper {
     @media (min-width: $screen-md-min) {
       float: none;
-      max-width: var(--grid-width);
       width: 100%;
       padding-top: 56.25%;
-      margin: 1rem auto;
+      margin: 1rem 0;
+      height: 0;
+      max-height: 0;
+      overflow: hidden;
       > img {
         left: 0;
         transform: none;
       }
+    }
+  }
+  .article__imagewrappertopper {
+    @media (min-width: $screen-md-min) {
+      max-height: 50vh;
+      overflow: hidden;
     }
   }
 }

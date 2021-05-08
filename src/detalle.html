@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./scss/app.scss" />
+  <include src="components/favicon.html"></include>
 </head>
 <body>  
   <include src="components/mainheader.html"></include>
@@ -15,10 +16,14 @@
     <h1 class="article__title is-single">
         Carne de Hida. Preparada a la piedra.
     </h1>
-    <span class="article__meta"><time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades</span>
-    <figure class="article__imagewrapper">
-      <img alt="Foto de Carne de Hida a la piedra" src="images/carneHida.jpg" />
-    </figure>
+    <span class="article__meta">
+      <time datetime="2021-03-29" class="">29/03/2021</time> | Especialidades
+    </span>
+    <div class="article__imagewrappertopper">
+      <figure class="article__imagewrapper">
+        <img loading="lazy" alt="Foto de Carne de Hida a la piedra" src="images/carneHida.jpg" />
+      </figure>
+    </div>
     <div class="content">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus gravida justo a urna faucibus, vel semper risus venenatis. Nullam ac dui quis velit laoreet interdum ac eget justo. Sed imperdiet lorem dictum purus semper dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales a libero id viverra. Vestibulum nec velit sed mauris egestas dignissim. Nunc augue quam, pharetra in est in, sollicitudin condimentum mi. In hac habitasse platea dictumst.
@@ -30,6 +35,7 @@
         <li>Fuego lento</li>
         <li>Cualquier cosa con la que la quieras acompañar. En la foto, acompañada de verduras de la zona y wasabi</li>
       </ol>
+      <img class="content__svg on-left" src="/svg/meat.svg" alt="Carne de primera">
       <p>
         Nam molestie urna arcu. Praesent nec odio ac massa tempor varius sed at ipsum. Etiam ac velit et lacus efficitur placerat. Praesent vel lobortis massa, in blandit ex. Vivamus suscipit porta ante, sit amet accumsan ante venenatis sed. Aenean arcu enim, ultrices ac neque quis, commodo condimentum velit. Vestibulum nibh mauris, pretium at tortor eu, ullamcorper consequat dolor. Praesent eu ligula id ex sagittis auctor sit amet vitae nulla. Curabitur lacinia sapien sed augue dictum hendrerit.
       </p>
@@ -39,6 +45,10 @@
       </p>
       <p>
         Maecenas eu imperdiet lacus, vel lacinia orci. Curabitur fringilla, ex eget imperdiet bibendum, felis ante convallis nibh, ut molestie orci neque laoreet nibh. Praesent a fermentum nulla. Vestibulum sit amet blandit metus, sit amet luctus tellus. Phasellus nec suscipit odio, ut feugiat dui. Morbi vehicula, magna eget aliquet iaculis, risus magna lobortis metus, et cursus nisi ex et erat. Fusce eu ultricies mauris. Nullam ut egestas leo. Phasellus commodo massa mi, sed bibendum arcu rutrum at. Sed mollis tortor in sollicitudin dapibus.
+      </p>
+      <p>¡A disfrutar!</p>
+      <p>
+        <img class="content__svg" src="/svg/undraw_eating_together_tjhx.svg" alt="Carne de primera">
       </p>
     </div>
   </article>

@@ -6,6 +6,19 @@
     min-height: calc(100vh - 7rem);
   }
   @extend .inner;
+  &__svg {
+    display: block;
+    margin: 2rem auto;
+    width: 85vw;
+    @media (min-width: $screen-sm-min) {
+    max-width: 25rem;
+    &.on-left {
+        max-width: 10rem;
+        float: left;
+        margin: 2rem 2rem 2rem 1rem;
+      }
+    }
+  }
 }
 
 .article.single-page {
