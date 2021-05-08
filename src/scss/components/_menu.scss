@@ -1,6 +1,7 @@
 #hamburger {
   background-color: var(--copper-pennyhc);
   border-radius: 100%;
+  border: 1px solid var(--copper-pennyhc);
   color: #fff;
   cursor: pointer;
   font-size: 2rem;
@@ -12,19 +13,54 @@
   text-align: center;
   top: 0.5rem;
   width: 3rem;
-  z-index: 1;
+  z-index: 4;
+  transition: all 0.35s linear;
+  body.js_menuopened & {
+    left: 85vw;
+    border: 1px solid #FFF;
+  }
   @media (min-width: $screen-md-min) {
     display: none;
   }
 }
 
+.hamburger {
+  &__bar {
+    background-color: #fff;
+    height: 4px;
+    display: block;
+    width: 100%;
+    margin: 0.2rem 0 0.35rem 0;
+    border-radius: 4px;
+    transition: all 0.25s linear;
+    position: relative;
+    top: 0;
+    body.js_menuopened & {
+      height: 2px;
+      &:nth-child(2) {
+        display: none;
+      }
+      &:first-child {
+        transform: rotateZ(45deg);
+        top: 0.65rem;
+      }
+      &:last-child {
+        transform: rotateZ(-45deg);
+        top: 0.2rem;
+      }
+    }
+  }
+}
+
 .menu {
+  display: inline;
   &__list {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     list-style: none;
     @media (min-width: $screen-md-min) {
       text-align: right;
+      display: inline;
     }
   }
   @media (max-width: $screen-md-min) {
@@ -68,14 +104,14 @@
     @media (max-width: $screen-md-min) {
       background-color: rgba(0,0,0,0.25);
       bottom: 0;
-      display: none;
-      left: 0;
+      left: -100vw;
       position: fixed;
-      right: 0;
       top: 0;
       z-index: 3;
+      transition: left 0.35s linear;
       body.js_menuopened & {
-        display: block;
+        left: 0;
+        right: 0;
       }
     }
   }
@@ -84,8 +120,25 @@
 .mainheader {
   background-color: var(--copper-pennyhc);
   @media (min-width: $screen-md-min) {
-    padding: 0.5rem;
+    padding: 0.5rem 0.15rem;
     font-size: 0.875rem;
+    transition: all 0.25s linear;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    top: -6.5rem;
+    
+    body.js_fixedheader & {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      font-size: 0.75rem;
+      padding: 0.15rem;
+      z-index: 8;
+      background-color: var(--copper-pennyhcFixed);
+    }
   }
 }
 
@@ -131,9 +184,14 @@
     filter: drop-shadow(0 0 0 rgba(0,0,0,0));
     mix-blend-mode: luminosity;
     transition: filter 0.25s linear;
-    width: 10rem;
+    width: 8rem;
     &:hover {
       filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+    }
+    @media (min-width: $screen-md-min) {
+      body.js_fixedheader & {
+        width: 5rem;
+      }
     }
   }
 }
