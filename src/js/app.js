@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   window.addEventListener('scroll', 
     debounce(() => {
-      console.log('accede');
       const headerHeight = document.querySelector('.mainheader').offsetHeight;
       if(window.scrollY > headerHeight) {
         if (!document.body.classList.contains('js_fixedheader')) {
