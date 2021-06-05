@@ -26,7 +26,7 @@ const supportsWebp = async () => {
   }
 })();
 
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   document.getElementById('hamburger').addEventListener('click', () => {
     document.body.classList.toggle('js_menuopened');
   });
@@ -47,4 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   );
+  const loadingLazy = document.querySelectorAll('.loadingLazy');
+  loadingLazy.forEach(
+    function(currentValue, currentIndex) {
+      loadingLazy[currentIndex].setAttribute('src', loadingLazy[currentIndex].getAttribute('data-src') ) ;
+    }
+  )
 });

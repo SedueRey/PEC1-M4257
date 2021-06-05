@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre nosotros | Restaurante Nanaryû</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./scss/app.scss" />
   <include src="components/favicon.html"></include>
 </head>
@@ -19,11 +18,6 @@
       <hgroup>
         <h1 class="pagetitle">Sobre nosotros</h1>
       </hgroup>
-      <div class="svganimation__wrapper">
-      <div class="svganimation">
-        <include src="components/svganimacion.html"></include>
-      </div>
-      </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ipsum libero, lobortis sit amet ligula vitae,
         sagittis commodo dolor. Ut dui ligula, hendrerit ut orci non, luctus ultricies sem. Nam pellentesque justo id
@@ -36,7 +30,7 @@
         <picture class="img">
           <source srcset="images/webp/carneHida.webp" type="image/webp">
           <source srcset="images/carneHida.jpg" type="image/jpeg"> 
-          <img loading="lazy" alt="Carne de Hida, &copy; 2019 - Eduardo Rey Jara" src="images/carneHida.jpg" />
+          <img width="1000" height="484"  loading="lazy" alt="Carne de Hida, &copy; 2019 - Eduardo Rey Jara" src="images/carneHida.jpg" />
         </picture>
         <figcaption>&copy; 2019 - Eduardo Rey Jara</figcaption>
       </figure>
@@ -52,7 +46,7 @@
         nibh. Donec placerat ac enim a malesuada. Mauris rhoncus luctus dolor sed vulputate.
       </p>
       <div class="imgwrapper" role="presentation">
-        <iframe loading="lazy" width="1568" height="892" src="https://www.youtube.com/embed/LJUZnh8o7ZY" title="YouTube video player"
+        <iframe loading="lazy" class="loadingLazy" width="1568" height="892" data-src="https://www.youtube.com/embed/LJUZnh8o7ZY" title="YouTube video player"
           frameborder="0"></iframe>
       </div>
       <p>
