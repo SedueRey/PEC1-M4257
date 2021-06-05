@@ -47,10 +47,22 @@ window.addEventListener('load', () => {
       }
     })
   );
-  const loadingLazy = document.querySelectorAll('.loadingLazy');
-  loadingLazy.forEach(
-    function(currentValue, currentIndex) {
-      loadingLazy[currentIndex].setAttribute('src', loadingLazy[currentIndex].getAttribute('data-src') ) ;
-    }
-  )
+  const loadingTriggers = document.querySelectorAll('.lazyFacade');
+  loadingTriggers.forEach(function(currentValue, currentIndex) {
+    loadingTriggers[currentIndex].addEventListener('click', (e) => {
+      e.target.style.display = 'none';
+      const loadingLazy = document.querySelectorAll('.loadingLazy');
+      loadingLazy.forEach(
+        function(currentValue, currentIndex) {
+          loadingLazy[currentIndex].setAttribute('src', loadingLazy[currentIndex].getAttribute('data-src') ) ;
+          loadingLazy[currentIndex].removeAttribute('style') ;
+        }
+      )
+    })
+  });
+  /*
+  setTimeout(() => {
+    
+  }, 800);
+  */
 });
